@@ -21,13 +21,25 @@
 ## Task 2: Environment variable helpers
 
 ### Acceptance Criteria
-- [ ] EnvVar enum defines environment variable names (MCP_TOOL_TIMEOUT, LLM_PROVIDER, etc.)
-- [ ] get_env(EnvVar) returns the environment variable value or None if not set
-- [ ] get_env(EnvVar, default) returns default when variable not set
-- [ ] set_env(EnvVar, value) sets the environment variable
-- [ ] unset_env(EnvVar) removes the environment variable
-- [ ] is_set(EnvVar) returns True if variable is set, False otherwise
-- [ ] get_env_int(EnvVar) returns integer value or None if not set/invalid
-- [ ] get_env_float(EnvVar) returns float value or None if not set/invalid
-- [ ] get_env_bool(EnvVar) returns boolean (True for "1", "true", "yes", "on")
-- [ ] get_env_list(EnvVar) returns comma-separated values as list
+- [x] EnvVar enum defines environment variable names (MCP_TOOL_TIMEOUT, LLM_PROVIDER, etc.)
+- [x] get_env(EnvVar) returns the environment variable value or None if not set
+- [x] get_env(EnvVar, default) returns default when variable not set
+- [x] set_env(EnvVar, value) sets the environment variable
+- [x] unset_env(EnvVar) removes the environment variable
+- [x] is_set(EnvVar) returns True if variable is set, False otherwise
+- [x] get_env_int(EnvVar) returns integer value or None if not set/invalid
+- [x] get_env_float(EnvVar) returns float value or None if not set/invalid
+- [x] get_env_bool(EnvVar) returns boolean (True for "1", "true", "yes", "on")
+- [x] get_env_list(EnvVar) returns comma-separated values as list
+
+## Task 3: Configuration models with Pydantic
+
+### Acceptance Criteria
+- [ ] TimeoutConfig model has fields for all timeout types with proper defaults
+- [ ] TimeoutConfig.get(TimeoutType) returns the timeout value by enum
+- [ ] TimeoutConfig is immutable (frozen=True)
+- [ ] ToolConfig model has include_tools, exclude_tools, confirm_tools, max_concurrency fields
+- [ ] ConfigOverride model captures CLI argument overrides (provider, model, api_base, etc.)
+- [ ] MCPConfig model can load from JSON file with server definitions
+- [ ] MCPConfig supports both sync and async loading
+- [ ] All config models have proper validation (e.g., timeouts must be positive)
