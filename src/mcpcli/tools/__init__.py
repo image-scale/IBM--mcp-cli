@@ -9,6 +9,12 @@ from mcpcli.tools.models import (
     FunctionDefinition,
     LLMToolDefinition,
 )
+from mcpcli.tools.filter import (
+    DisabledReason,
+    FilterStats,
+    ToolFilter,
+)
+from mcpcli.tools.validation import ToolSchemaValidator
 
 __all__ = [
     "ToolInfo",
@@ -18,4 +24,8 @@ __all__ = [
     "ValidationResult",
     "FunctionDefinition",
     "LLMToolDefinition",
+    "DisabledReason",
+    "FilterStats",
+    "ToolFilter",
+    "ToolSchemaValidator",
 ]

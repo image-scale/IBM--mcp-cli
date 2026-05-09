@@ -48,3 +48,10 @@
 **Commit**: Add centralized context management for application state
 **Acceptance**: 15/15 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 8
+**Task**: Task 8 — Tool filtering and validation utilities
+**Files created**: src/mcpcli/tools/filter.py, src/mcpcli/tools/validation.py, tests/tools/test_filter.py, tests/tools/test_validation.py
+**Commit**: Add tool filtering and schema validation utilities
+**Acceptance**: 12/12 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state

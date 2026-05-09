@@ -98,3 +98,19 @@
 - [x] ContextManager is a singleton for managing application context
 - [x] get_context() convenience function returns current context
 - [x] initialize_context() convenience function creates and returns context
+
+## Task 8: Tool filtering and validation utilities
+
+### Acceptance Criteria
+- [x] DisabledReason enum has VALIDATION, USER, UNKNOWN values
+- [x] FilterStats model tracks attempted, successful, failed fix counts
+- [x] ToolFilter class manages disabled tools with reasons
+- [x] ToolFilter.is_tool_enabled() checks if tool is not disabled
+- [x] ToolFilter.disable_tool() disables with reason (USER or VALIDATION)
+- [x] ToolFilter.enable_tool() re-enables a disabled tool
+- [x] ToolFilter.filter_tools() separates valid from invalid tools
+- [x] ToolFilter.get_disabled_tools() returns tools with reasons
+- [x] ToolSchemaValidator.validate_openai_schema() validates tool format
+- [x] ToolSchemaValidator.fix_array_schemas() fixes array schemas missing items
+- [x] ToolSchemaValidator.fix_openai_compatibility() removes unsupported properties
+- [x] ToolSchemaValidator.validate_and_fix_tool() combines fix and validate
