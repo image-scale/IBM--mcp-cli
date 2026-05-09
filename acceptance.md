@@ -59,11 +59,23 @@
 ## Task 5: Tool and server data models
 
 ### Acceptance Criteria
-- [ ] ToolInfo model has name, namespace, description, parameters fields
-- [ ] ToolInfo.fully_qualified_name returns "namespace.name" format
-- [ ] ToolInfo.to_llm_format() converts to OpenAI function calling format
-- [ ] ServerInfo model has id, name, status, tool_count, capabilities fields
-- [ ] ServerInfo.is_healthy checks status and connected state
-- [ ] ToolCallResult model tracks success, result, error, execution_time
-- [ ] ConversationMessage model supports user, assistant, system, tool roles
-- [ ] ValidationResult model has is_valid, error_message, warnings fields
+- [x] ToolInfo model has name, namespace, description, parameters fields
+- [x] ToolInfo.fully_qualified_name returns "namespace.name" format
+- [x] ToolInfo.to_llm_format() converts to OpenAI function calling format
+- [x] ServerInfo model has id, name, status, tool_count, capabilities fields
+- [x] ServerInfo.is_healthy checks status and connected state
+- [x] ToolCallResult model tracks success, result, error, execution_time
+- [x] ConversationMessage model supports user, assistant, system, tool roles
+- [x] ValidationResult model has is_valid, error_message, warnings fields
+
+## Task 6: Command base classes and registry
+
+### Acceptance Criteria
+- [x] CommandMode flag enum has CHAT, CLI, INTERACTIVE, ALL values
+- [x] CommandParameter model defines name, type, default, required, help fields
+- [x] CommandResult model has success, output, data, error, should_exit fields
+- [x] UnifiedCommand abstract base class defines name, description, execute method
+- [x] UnifiedCommand has aliases, modes, parameters, and hidden properties
+- [x] CommandRegistry can register and lookup commands by name or alias
+- [x] CommandRegistry.get_commands_for_mode filters by CommandMode
+- [x] Commands can validate their parameters before execution

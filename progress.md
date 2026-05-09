@@ -27,3 +27,17 @@
 **Commit**: Add runtime configuration that resolves values from multiple sources with priority order
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 5
+**Task**: Task 5 — Tool and server data models
+**Files created**: src/mcpcli/tools/models.py, tests/tools/test_models.py
+**Commit**: Add data models for tools, servers, and conversation messages
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 6
+**Task**: Task 6 — Command base classes and registry
+**Files created**: src/mcpcli/commands/__init__.py, src/mcpcli/commands/base.py, src/mcpcli/commands/registry.py, tests/commands/test_base.py, tests/commands/test_registry.py
+**Commit**: Add unified command system with base classes and registry
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
