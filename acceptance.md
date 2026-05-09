@@ -127,3 +127,13 @@
 - [x] format_reasoning_preview() tries to break at word boundaries
 - [x] format_content_preview() truncates long content
 - [x] format_content_preview() tries to break at word boundaries
+
+## Task 10: Main CLI entry point with Typer
+
+### Acceptance Criteria
+- [x] Typer app is created with add_completion=False
+- [x] main_callback handles default case when no subcommand given
+- [x] Common options: --config-file, --provider, --model, --quiet, --verbose
+- [x] version command shows version info
+- [x] help command shows usage
+- [x] Commands can access shared options via context
