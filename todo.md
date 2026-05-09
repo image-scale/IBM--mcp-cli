@@ -6,8 +6,8 @@ Build the CLI infrastructure in dependency order: configuration system first (co
 ## Tasks
 - [x] Task 1: Implement configuration defaults and enums (config/defaults.py, config/enums.py + tests)
 - [x] Task 2: Implement environment variable helpers (config/env_vars.py + tests)
-- [>] Task 3: Implement configuration models with Pydantic (config/models.py + tests)
-- [ ] Task 4: Implement runtime configuration with override resolution (config/runtime.py + tests)
+- [x] Task 3: Implement configuration models with Pydantic (config/models.py + tests)
+- [>] Task 4: Implement runtime configuration with override resolution (config/runtime.py + tests)
 - [ ] Task 5: Implement tool and server data models (tools/models.py + tests)
 - [ ] Task 6: Implement command base classes and registry (commands/base.py, commands/registry.py + tests)
 - [ ] Task 7: Implement context management (context/context_manager.py + tests)

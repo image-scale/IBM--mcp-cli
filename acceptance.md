@@ -35,11 +35,23 @@
 ## Task 3: Configuration models with Pydantic
 
 ### Acceptance Criteria
-- [ ] TimeoutConfig model has fields for all timeout types with proper defaults
-- [ ] TimeoutConfig.get(TimeoutType) returns the timeout value by enum
-- [ ] TimeoutConfig is immutable (frozen=True)
-- [ ] ToolConfig model has include_tools, exclude_tools, confirm_tools, max_concurrency fields
-- [ ] ConfigOverride model captures CLI argument overrides (provider, model, api_base, etc.)
-- [ ] MCPConfig model can load from JSON file with server definitions
-- [ ] MCPConfig supports both sync and async loading
-- [ ] All config models have proper validation (e.g., timeouts must be positive)
+- [x] TimeoutConfig model has fields for all timeout types with proper defaults
+- [x] TimeoutConfig.get(TimeoutType) returns the timeout value by enum
+- [x] TimeoutConfig is immutable (frozen=True)
+- [x] ToolConfig model has include_tools, exclude_tools, confirm_tools, max_concurrency fields
+- [x] ConfigOverride model captures CLI argument overrides (provider, model, api_base, etc.)
+- [x] MCPConfig model can load from JSON file with server definitions
+- [x] MCPConfig supports both sync and async loading
+- [x] All config models have proper validation (e.g., timeouts must be positive)
+
+## Task 4: Runtime configuration with override resolution
+
+### Acceptance Criteria
+- [ ] RuntimeConfig combines MCPConfig with ConfigOverride
+- [ ] CLI overrides take precedence over file configuration
+- [ ] Environment variable overrides are supported
+- [ ] RuntimeConfig.provider returns resolved provider value
+- [ ] RuntimeConfig.model returns resolved model value
+- [ ] RuntimeConfig.get_timeout(TimeoutType) returns resolved timeout
+- [ ] ResolvedValue tracks the source of each config value (CLI, ENV, FILE, DEFAULT)
+- [ ] get_server_timeout returns server-specific timeout if set, else global

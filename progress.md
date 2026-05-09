@@ -13,3 +13,10 @@
 **Commit**: Add environment variable helpers for type-safe access to configuration
 **Acceptance**: 10/10 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 3
+**Task**: Task 3 — Configuration models with Pydantic
+**Files created**: src/mcpcli/config/models.py, tests/config/test_models.py
+**Commit**: Add Pydantic configuration models for type-safe validated configuration
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
