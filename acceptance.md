@@ -47,11 +47,23 @@
 ## Task 4: Runtime configuration with override resolution
 
 ### Acceptance Criteria
-- [ ] RuntimeConfig combines MCPConfig with ConfigOverride
-- [ ] CLI overrides take precedence over file configuration
-- [ ] Environment variable overrides are supported
-- [ ] RuntimeConfig.provider returns resolved provider value
-- [ ] RuntimeConfig.model returns resolved model value
-- [ ] RuntimeConfig.get_timeout(TimeoutType) returns resolved timeout
-- [ ] ResolvedValue tracks the source of each config value (CLI, ENV, FILE, DEFAULT)
-- [ ] get_server_timeout returns server-specific timeout if set, else global
+- [x] RuntimeConfig combines MCPConfig with ConfigOverride
+- [x] CLI overrides take precedence over file configuration
+- [x] Environment variable overrides are supported
+- [x] RuntimeConfig.provider returns resolved provider value
+- [x] RuntimeConfig.model returns resolved model value
+- [x] RuntimeConfig.get_timeout(TimeoutType) returns resolved timeout
+- [x] ResolvedValue tracks the source of each config value (CLI, ENV, FILE, DEFAULT)
+- [x] get_server_timeout returns server-specific timeout if set, else global
+
+## Task 5: Tool and server data models
+
+### Acceptance Criteria
+- [ ] ToolInfo model has name, namespace, description, parameters fields
+- [ ] ToolInfo.fully_qualified_name returns "namespace.name" format
+- [ ] ToolInfo.to_llm_format() converts to OpenAI function calling format
+- [ ] ServerInfo model has id, name, status, tool_count, capabilities fields
+- [ ] ServerInfo.is_healthy checks status and connected state
+- [ ] ToolCallResult model tracks success, result, error, execution_time
+- [ ] ConversationMessage model supports user, assistant, system, tool roles
+- [ ] ValidationResult model has is_valid, error_message, warnings fields

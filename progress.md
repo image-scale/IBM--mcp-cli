@@ -20,3 +20,10 @@
 **Commit**: Add Pydantic configuration models for type-safe validated configuration
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 4
+**Task**: Task 4 — Runtime configuration with override resolution
+**Files created**: src/mcpcli/config/runtime.py, tests/config/test_runtime.py
+**Commit**: Add runtime configuration that resolves values from multiple sources with priority order
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
