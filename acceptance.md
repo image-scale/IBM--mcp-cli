@@ -79,3 +79,22 @@
 - [x] CommandRegistry can register and lookup commands by name or alias
 - [x] CommandRegistry.get_commands_for_mode filters by CommandMode
 - [x] Commands can validate their parameters before execution
+
+## Task 7: Context management
+
+### Acceptance Criteria
+- [x] ApplicationContext is a Pydantic model holding application state
+- [x] ApplicationContext has provider, model, api_base, api_key, config_path fields
+- [x] ApplicationContext has servers, tools, current_server state fields
+- [x] ApplicationContext has verbose_mode, confirm_tools, theme UI state fields
+- [x] ApplicationContext has session_id, is_interactive, exit_requested session fields
+- [x] ApplicationContext has conversation_history list for chat messages
+- [x] ApplicationContext.create() factory method with defaults
+- [x] ApplicationContext.initialize() async method loads servers and tools
+- [x] ApplicationContext.find_server() and find_tool() lookup by name
+- [x] ApplicationContext.get() and set() provide dict-like access
+- [x] ApplicationContext.to_dict() converts to dictionary
+- [x] ApplicationContext.add_message() helpers for conversation management
+- [x] ContextManager is a singleton for managing application context
+- [x] get_context() convenience function returns current context
+- [x] initialize_context() convenience function creates and returns context
