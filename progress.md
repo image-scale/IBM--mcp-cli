@@ -55,3 +55,10 @@
 **Commit**: Add tool filtering and schema validation utilities
 **Acceptance**: 12/12 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 9
+**Task**: Task 9 — Display formatting utilities
+**Files created**: src/mcpcli/display/__init__.py, src/mcpcli/display/formatters.py, tests/display/test_formatters.py
+**Commit**: Add display formatting utilities for previews
+**Acceptance**: 9/9 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state

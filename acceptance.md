@@ -114,3 +114,16 @@
 - [x] ToolSchemaValidator.fix_array_schemas() fixes array schemas missing items
 - [x] ToolSchemaValidator.fix_openai_compatibility() removes unsupported properties
 - [x] ToolSchemaValidator.validate_and_fix_tool() combines fix and validate
+
+## Task 9: Display formatting utilities
+
+### Acceptance Criteria
+- [x] format_args_preview() formats tool arguments as key=value preview
+- [x] format_args_preview() truncates long string values
+- [x] format_args_preview() limits number of shown arguments with "+N more"
+- [x] format_args_preview() handles dict and list values as JSON
+- [x] format_reasoning_preview() truncates long text with ellipsis
+- [x] format_reasoning_preview() supports showing from start or end
+- [x] format_reasoning_preview() tries to break at word boundaries
+- [x] format_content_preview() truncates long content
+- [x] format_content_preview() tries to break at word boundaries
